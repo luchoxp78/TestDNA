@@ -1,5 +1,6 @@
-Esta es la salida del programa cuando lo ejecutamos.
+# Esta es la salida del programa cuando lo ejecutamos.
 
+```
 sept. 21, 2023 9:36:26 A. M. [com.sun.xml.ws.policy.EffectiveAlternativeSelector]  selectAlternatives
 WARNING: WSP0075: Policy assertion "{http://schemas.xmlsoap.org/ws/2005/07/securitypolicy}AsymmetricBinding" was evaluated as "UNKNOWN".
 sept. 21, 2023 9:36:26 A. M. [com.sun.xml.ws.policy.EffectiveAlternativeSelector]  selectAlternatives
@@ -30,3 +31,4 @@ Exception in thread "main" com.sun.xml.ws.fault.ServerSOAPFaultException: Client
 	at com.sun.xml.ws.client.sei.SEIStub.invoke(SEIStub.java:131)
 	at com.sun.proxy.$Proxy33.consultarImportador(Unknown Source)
 	at com.dna.cliente.TestService.main(TestService.java:45)
+```
