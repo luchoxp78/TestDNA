@@ -1,0 +1,1545 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaws="http://www.w3.org/2005/08/addressing" xmlns:tns="http://aduana.gov.py/webservices" xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="serviciodeposito" targetNamespace="http://aduana.gov.py/webservices">
+  <wsdl:types>
+<schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaws="http://www.w3.org/2005/08/addressing" xmlns:tns="http://aduana.gov.py/webservices" xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://www.w3.org/2001/XMLSchema">
+  
+  <import namespace="http://aduana.gov.py/webservices" schemaLocation="https://securetest.aduana.gov.py/sgd2/serviciodeposito?xsd=serviciodeposito_schema1.xsd"/>
+
+</schema>
+  </wsdl:types>
+  <wsdl:message name="consultarDeclaracionSimplLiquidacionResponse">
+    <wsdl:part element="tns:consultarDeclaracionSimplLiquidacionResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="verificarRetiroAnticipado">
+    <wsdl:part element="tns:verificarRetiroAnticipado" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoEfcResponse">
+    <wsdl:part element="tns:ingresoEfcResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="revertirDepositoResponse">
+    <wsdl:part element="tns:revertirDepositoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="crearBoletaCanonResponse">
+    <wsdl:part element="tns:crearBoletaCanonResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="verificarDespachoTereResponse">
+    <wsdl:part element="tns:verificarDespachoTereResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDespacho">
+    <wsdl:part element="tns:consultarDespacho" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaManifiestosResponse">
+    <wsdl:part element="tns:consultarListaManifiestosResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarTransitosSqf">
+    <wsdl:part element="tns:consultarTransitosSqf" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarManifiestoTitulo">
+    <wsdl:part element="tns:consultarManifiestoTitulo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="trasladosEfc">
+    <wsdl:part element="tns:trasladosEfc" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDesglosesIngAut">
+    <wsdl:part element="tns:consultarDesglosesIngAut" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDesconsolidadosIngAutResponse">
+    <wsdl:part element="tns:consultarDesconsolidadosIngAutResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="actaRecepcion">
+    <wsdl:part element="tns:actaRecepcion" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoDeposito">
+    <wsdl:part element="tns:ingresoDeposito" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="expedienteThResponse">
+    <wsdl:part element="tns:expedienteThResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaDeclaracionLight">
+    <wsdl:part element="tns:consultarListaDeclaracionLight" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarSaldoRucResponse">
+    <wsdl:part element="tns:consultarSaldoRucResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="crearBoletaCanon">
+    <wsdl:part element="tns:crearBoletaCanon" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDeclaracionSimplificadaResponse">
+    <wsdl:part element="tns:consultarDeclaracionSimplificadaResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="actaRecepcionResponse">
+    <wsdl:part element="tns:actaRecepcionResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaIntervenciones">
+    <wsdl:part element="tns:consultaIntervenciones" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoRemiEfcRegistrarResponse">
+    <wsdl:part element="tns:ingresoRemiEfcRegistrarResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaIntervencionesContenedores">
+    <wsdl:part element="tns:consultaIntervencionesContenedores" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoRemiEfcRegistrar">
+    <wsdl:part element="tns:ingresoRemiEfcRegistrar" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="trasladosEfcResponse">
+    <wsdl:part element="tns:trasladosEfcResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoNovedadesDepositoResponse">
+    <wsdl:part element="tns:ingresoNovedadesDepositoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="revertirDeposito">
+    <wsdl:part element="tns:revertirDeposito" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="afectacionesCanon">
+    <wsdl:part element="tns:afectacionesCanon" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="transitoResponse">
+    <wsdl:part element="tns:transitoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoRemiExportadorResponse">
+    <wsdl:part element="tns:ingresoRemiExportadorResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarSolicitudesIngAutResponse">
+    <wsdl:part element="tns:consultarSolicitudesIngAutResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaDecSimplPendGroup">
+    <wsdl:part element="tns:consultarListaDecSimplPendGroup" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="trasladoEfc">
+    <wsdl:part element="tns:trasladoEfc" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDeclaracionResponse">
+    <wsdl:part element="tns:consultarDeclaracionResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaIntervencionesLineasResponse">
+    <wsdl:part element="tns:consultaIntervencionesLineasResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaDecSimplLightResponse">
+    <wsdl:part element="tns:consultarListaDecSimplLightResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDeclaracionSimplificadaAllResponse">
+    <wsdl:part element="tns:consultarDeclaracionSimplificadaAllResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarGuiaMadre">
+    <wsdl:part element="tns:consultarGuiaMadre" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listaSalidaZonaPrimariaResponse">
+    <wsdl:part element="tns:listaSalidaZonaPrimariaResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaManifiestoResponse">
+    <wsdl:part element="tns:consultarListaManifiestoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaIntervencionesContenedoresResponse">
+    <wsdl:part element="tns:consultaIntervencionesContenedoresResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDeclaracionSinSalidaResponse">
+    <wsdl:part element="tns:consultarDeclaracionSinSalidaResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarSolicitudesIngAut">
+    <wsdl:part element="tns:consultarSolicitudesIngAut" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarAgente">
+    <wsdl:part element="tns:consultarAgente" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDeclaracionSimplificadaAll">
+    <wsdl:part element="tns:consultarDeclaracionSimplificadaAll" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarGuiasManifiestosPrevios">
+    <wsdl:part element="tns:consultarGuiasManifiestosPrevios" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDesglose">
+    <wsdl:part element="tns:consultarDesglose" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoRemiEfcConsultarResponse">
+    <wsdl:part element="tns:ingresoRemiEfcConsultarResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDeclaracionExpoResponse">
+    <wsdl:part element="tns:consultarDeclaracionExpoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarTransitosSqfResponse">
+    <wsdl:part element="tns:consultarTransitosSqfResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoDepositoTemaResponse">
+    <wsdl:part element="tns:ingresoDepositoTemaResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarManifiestosPrevios">
+    <wsdl:part element="tns:consultarManifiestosPrevios" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarManifiestosDepositoResponse">
+    <wsdl:part element="tns:consultarManifiestosDepositoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaManifiestos">
+    <wsdl:part element="tns:consultarListaManifiestos" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="salidaDespachoSimplExpo">
+    <wsdl:part element="tns:salidaDespachoSimplExpo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoDepositoDocTrans">
+    <wsdl:part element="tns:ingresoDepositoDocTrans" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCotizacionResponse">
+    <wsdl:part element="tns:consultarCotizacionResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaDeclaracionSimplResponse">
+    <wsdl:part element="tns:consultarListaDeclaracionSimplResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarGuiasCou">
+    <wsdl:part element="tns:consultarGuiasCou" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoDepositoResponse">
+    <wsdl:part element="tns:ingresoDepositoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="salidaZonaPrimariaRemateResponse">
+    <wsdl:part element="tns:salidaZonaPrimariaRemateResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="transitoCambioEstado">
+    <wsdl:part element="tns:transitoCambioEstado" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="verificarRetiroAnticipadoResponse">
+    <wsdl:part element="tns:verificarRetiroAnticipadoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarManifiestoTituloResponse">
+    <wsdl:part element="tns:consultarManifiestoTituloResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoDepositoDocTransResponse">
+    <wsdl:part element="tns:ingresoDepositoDocTransResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoRemiEfcConsultar">
+    <wsdl:part element="tns:ingresoRemiEfcConsultar" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDeclaracionSimplificadaExpo">
+    <wsdl:part element="tns:consultarDeclaracionSimplificadaExpo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDeclaracionSimplificada">
+    <wsdl:part element="tns:consultarDeclaracionSimplificada" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarSaldoRuc">
+    <wsdl:part element="tns:consultarSaldoRuc" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaDeclaracionSimplGuia">
+    <wsdl:part element="tns:consultarListaDeclaracionSimplGuia" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoDespachoSimplExpo">
+    <wsdl:part element="tns:ingresoDespachoSimplExpo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaDeclaracion">
+    <wsdl:part element="tns:consultarListaDeclaracion" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="salidaZonaPrimariaResponse">
+    <wsdl:part element="tns:salidaZonaPrimariaResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDespachoResponse">
+    <wsdl:part element="tns:consultarDespachoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaIntervencionesLineas">
+    <wsdl:part element="tns:consultaIntervencionesLineas" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDeclaracionSinSalida">
+    <wsdl:part element="tns:consultarDeclaracionSinSalida" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="trasladoEfcResponse">
+    <wsdl:part element="tns:trasladoEfcResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoEfc">
+    <wsdl:part element="tns:ingresoEfc" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="expedienteTh">
+    <wsdl:part element="tns:expedienteTh" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarBultosDeclaradosResponse">
+    <wsdl:part element="tns:consultarBultosDeclaradosResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDeclaracionSimplLiquidacion">
+    <wsdl:part element="tns:consultarDeclaracionSimplLiquidacion" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarManifiestosDeposito">
+    <wsdl:part element="tns:consultarManifiestosDeposito" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDeclaracionSimplificadaExpoResponse">
+    <wsdl:part element="tns:consultarDeclaracionSimplificadaExpoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarGuiaMadreResponse">
+    <wsdl:part element="tns:consultarGuiaMadreResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarAgenteResponse">
+    <wsdl:part element="tns:consultarAgenteResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="guiasSinOficializar">
+    <wsdl:part element="tns:guiasSinOficializar" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaDecSimplPendGroupResponse">
+    <wsdl:part element="tns:consultarListaDecSimplPendGroupResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarTransporteInternacional">
+    <wsdl:part element="tns:consultarTransporteInternacional" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaManifiesto">
+    <wsdl:part element="tns:consultarListaManifiesto" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarImportador">
+    <wsdl:part element="tns:consultarImportador" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaDeclaracionResponse">
+    <wsdl:part element="tns:consultarListaDeclaracionResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarImportadorResponse">
+    <wsdl:part element="tns:consultarImportadorResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarManifiestoTema">
+    <wsdl:part element="tns:consultarManifiestoTema" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarGuiasManifiestosPreviosResponse">
+    <wsdl:part element="tns:consultarGuiasManifiestosPreviosResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="salidaDespachoSimplExpoResponse">
+    <wsdl:part element="tns:salidaDespachoSimplExpoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoDespachoSimplExpoResponse">
+    <wsdl:part element="tns:ingresoDespachoSimplExpoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultaIntervencionesResponse">
+    <wsdl:part element="tns:consultaIntervencionesResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCotizacion">
+    <wsdl:part element="tns:consultarCotizacion" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCodigoBarra">
+    <wsdl:part element="tns:consultarCodigoBarra" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDesgloseResponse">
+    <wsdl:part element="tns:consultarDesgloseResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarManifiestosPreviosResponse">
+    <wsdl:part element="tns:consultarManifiestosPreviosResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="salidaZonaPrimaria">
+    <wsdl:part element="tns:salidaZonaPrimaria" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="salidaZonaPrimariaRemate">
+    <wsdl:part element="tns:salidaZonaPrimariaRemate" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDesconsolidadosIngAut">
+    <wsdl:part element="tns:consultarDesconsolidadosIngAut" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoRemiExportador">
+    <wsdl:part element="tns:ingresoRemiExportador" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaDecSimplLight">
+    <wsdl:part element="tns:consultarListaDecSimplLight" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoNovedadesDeposito">
+    <wsdl:part element="tns:ingresoNovedadesDeposito" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="guiasSinOficializarResponse">
+    <wsdl:part element="tns:guiasSinOficializarResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaDeclaracionSimpl">
+    <wsdl:part element="tns:consultarListaDeclaracionSimpl" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="verificarDespachoTere">
+    <wsdl:part element="tns:verificarDespachoTere" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarGuiasCouResponse">
+    <wsdl:part element="tns:consultarGuiasCouResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDesglosesIngAutResponse">
+    <wsdl:part element="tns:consultarDesglosesIngAutResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaDeclaracionSimplGuiaResponse">
+    <wsdl:part element="tns:consultarListaDeclaracionSimplGuiaResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarCodigoBarraResponse">
+    <wsdl:part element="tns:consultarCodigoBarraResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarTransporteInternacionalResponse">
+    <wsdl:part element="tns:consultarTransporteInternacionalResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="transitoCambioEstadoResponse">
+    <wsdl:part element="tns:transitoCambioEstadoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarManifiesto">
+    <wsdl:part element="tns:consultarManifiesto" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarManifiestoTemaResponse">
+    <wsdl:part element="tns:consultarManifiestoTemaResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDeclaracionExpo">
+    <wsdl:part element="tns:consultarDeclaracionExpo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listaSalidaZonaPrimaria">
+    <wsdl:part element="tns:listaSalidaZonaPrimaria" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarBultosDeclarados">
+    <wsdl:part element="tns:consultarBultosDeclarados" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarListaDeclaracionLightResponse">
+    <wsdl:part element="tns:consultarListaDeclaracionLightResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="afectacionesCanonResponse">
+    <wsdl:part element="tns:afectacionesCanonResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarDeclaracion">
+    <wsdl:part element="tns:consultarDeclaracion" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarManifiestoResponse">
+    <wsdl:part element="tns:consultarManifiestoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="transito">
+    <wsdl:part element="tns:transito" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ingresoDepositoTema">
+    <wsdl:part element="tns:ingresoDepositoTema" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="serviciodepositoSoap">
+    <wsdl:operation name="verificarRetiroAnticipado">
+      <wsdl:input message="tns:verificarRetiroAnticipado" name="verificarRetiroAnticipado">
+    </wsdl:input>
+      <wsdl:output message="tns:verificarRetiroAnticipadoResponse" name="verificarRetiroAnticipadoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarGuiasCou">
+      <wsdl:input message="tns:consultarGuiasCou" name="consultarGuiasCou">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarGuiasCouResponse" name="consultarGuiasCouResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transitoCambioEstado">
+      <wsdl:input message="tns:transitoCambioEstado" name="transitoCambioEstado">
+    </wsdl:input>
+      <wsdl:output message="tns:transitoCambioEstadoResponse" name="transitoCambioEstadoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDespacho">
+      <wsdl:input message="tns:consultarDespacho" name="consultarDespacho">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarDespachoResponse" name="consultarDespachoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoRemiEfcConsultar">
+      <wsdl:input message="tns:ingresoRemiEfcConsultar" name="ingresoRemiEfcConsultar">
+    </wsdl:input>
+      <wsdl:output message="tns:ingresoRemiEfcConsultarResponse" name="ingresoRemiEfcConsultarResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDeclaracionSimplificadaExpo">
+      <wsdl:input message="tns:consultarDeclaracionSimplificadaExpo" name="consultarDeclaracionSimplificadaExpo">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarDeclaracionSimplificadaExpoResponse" name="consultarDeclaracionSimplificadaExpoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDeclaracionSimplificada">
+      <wsdl:input message="tns:consultarDeclaracionSimplificada" name="consultarDeclaracionSimplificada">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarDeclaracionSimplificadaResponse" name="consultarDeclaracionSimplificadaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarSaldoRuc">
+      <wsdl:input message="tns:consultarSaldoRuc" name="consultarSaldoRuc">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarSaldoRucResponse" name="consultarSaldoRucResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaDeclaracionSimplGuia">
+      <wsdl:input message="tns:consultarListaDeclaracionSimplGuia" name="consultarListaDeclaracionSimplGuia">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarListaDeclaracionSimplGuiaResponse" name="consultarListaDeclaracionSimplGuiaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarTransitosSqf">
+      <wsdl:input message="tns:consultarTransitosSqf" name="consultarTransitosSqf">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarTransitosSqfResponse" name="consultarTransitosSqfResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoDespachoSimplExpo">
+      <wsdl:input message="tns:ingresoDespachoSimplExpo" name="ingresoDespachoSimplExpo">
+    </wsdl:input>
+      <wsdl:output message="tns:ingresoDespachoSimplExpoResponse" name="ingresoDespachoSimplExpoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarManifiestoTitulo">
+      <wsdl:input message="tns:consultarManifiestoTitulo" name="consultarManifiestoTitulo">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarManifiestoTituloResponse" name="consultarManifiestoTituloResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trasladosEfc">
+      <wsdl:input message="tns:trasladosEfc" name="trasladosEfc">
+    </wsdl:input>
+      <wsdl:output message="tns:trasladosEfcResponse" name="trasladosEfcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDesglosesIngAut">
+      <wsdl:input message="tns:consultarDesglosesIngAut" name="consultarDesglosesIngAut">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarDesglosesIngAutResponse" name="consultarDesglosesIngAutResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaDeclaracion">
+      <wsdl:input message="tns:consultarListaDeclaracion" name="consultarListaDeclaracion">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarListaDeclaracionResponse" name="consultarListaDeclaracionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaIntervencionesLineas">
+      <wsdl:input message="tns:consultaIntervencionesLineas" name="consultaIntervencionesLineas">
+    </wsdl:input>
+      <wsdl:output message="tns:consultaIntervencionesLineasResponse" name="consultaIntervencionesLineasResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDeclaracionSinSalida">
+      <wsdl:input message="tns:consultarDeclaracionSinSalida" name="consultarDeclaracionSinSalida">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarDeclaracionSinSalidaResponse" name="consultarDeclaracionSinSalidaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actaRecepcion">
+      <wsdl:input message="tns:actaRecepcion" name="actaRecepcion">
+    </wsdl:input>
+      <wsdl:output message="tns:actaRecepcionResponse" name="actaRecepcionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoDeposito">
+      <wsdl:input message="tns:ingresoDeposito" name="ingresoDeposito">
+    </wsdl:input>
+      <wsdl:output message="tns:ingresoDepositoResponse" name="ingresoDepositoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoEfc">
+      <wsdl:input message="tns:ingresoEfc" name="ingresoEfc">
+    </wsdl:input>
+      <wsdl:output message="tns:ingresoEfcResponse" name="ingresoEfcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="expedienteTh">
+      <wsdl:input message="tns:expedienteTh" name="expedienteTh">
+    </wsdl:input>
+      <wsdl:output message="tns:expedienteThResponse" name="expedienteThResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDeclaracionSimplLiquidacion">
+      <wsdl:input message="tns:consultarDeclaracionSimplLiquidacion" name="consultarDeclaracionSimplLiquidacion">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarDeclaracionSimplLiquidacionResponse" name="consultarDeclaracionSimplLiquidacionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarManifiestosDeposito">
+      <wsdl:input message="tns:consultarManifiestosDeposito" name="consultarManifiestosDeposito">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarManifiestosDepositoResponse" name="consultarManifiestosDepositoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaDeclaracionLight">
+      <wsdl:input message="tns:consultarListaDeclaracionLight" name="consultarListaDeclaracionLight">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarListaDeclaracionLightResponse" name="consultarListaDeclaracionLightResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guiasSinOficializar">
+      <wsdl:input message="tns:guiasSinOficializar" name="guiasSinOficializar">
+    </wsdl:input>
+      <wsdl:output message="tns:guiasSinOficializarResponse" name="guiasSinOficializarResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="crearBoletaCanon">
+      <wsdl:input message="tns:crearBoletaCanon" name="crearBoletaCanon">
+    </wsdl:input>
+      <wsdl:output message="tns:crearBoletaCanonResponse" name="crearBoletaCanonResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarTransporteInternacional">
+      <wsdl:input message="tns:consultarTransporteInternacional" name="consultarTransporteInternacional">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarTransporteInternacionalResponse" name="consultarTransporteInternacionalResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaIntervenciones">
+      <wsdl:input message="tns:consultaIntervenciones" name="consultaIntervenciones">
+    </wsdl:input>
+      <wsdl:output message="tns:consultaIntervencionesResponse" name="consultaIntervencionesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaIntervencionesContenedores">
+      <wsdl:input message="tns:consultaIntervencionesContenedores" name="consultaIntervencionesContenedores">
+    </wsdl:input>
+      <wsdl:output message="tns:consultaIntervencionesContenedoresResponse" name="consultaIntervencionesContenedoresResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoRemiEfcRegistrar">
+      <wsdl:input message="tns:ingresoRemiEfcRegistrar" name="ingresoRemiEfcRegistrar">
+    </wsdl:input>
+      <wsdl:output message="tns:ingresoRemiEfcRegistrarResponse" name="ingresoRemiEfcRegistrarResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaManifiesto">
+      <wsdl:input message="tns:consultarListaManifiesto" name="consultarListaManifiesto">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarListaManifiestoResponse" name="consultarListaManifiestoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarImportador">
+      <wsdl:input message="tns:consultarImportador" name="consultarImportador">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarImportadorResponse" name="consultarImportadorResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="revertirDeposito">
+      <wsdl:input message="tns:revertirDeposito" name="revertirDeposito">
+    </wsdl:input>
+      <wsdl:output message="tns:revertirDepositoResponse" name="revertirDepositoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarManifiestoTema">
+      <wsdl:input message="tns:consultarManifiestoTema" name="consultarManifiestoTema">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarManifiestoTemaResponse" name="consultarManifiestoTemaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="afectacionesCanon">
+      <wsdl:input message="tns:afectacionesCanon" name="afectacionesCanon">
+    </wsdl:input>
+      <wsdl:output message="tns:afectacionesCanonResponse" name="afectacionesCanonResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarCotizacion">
+      <wsdl:input message="tns:consultarCotizacion" name="consultarCotizacion">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarCotizacionResponse" name="consultarCotizacionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarCodigoBarra">
+      <wsdl:input message="tns:consultarCodigoBarra" name="consultarCodigoBarra">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarCodigoBarraResponse" name="consultarCodigoBarraResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaDecSimplPendGroup">
+      <wsdl:input message="tns:consultarListaDecSimplPendGroup" name="consultarListaDecSimplPendGroup">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarListaDecSimplPendGroupResponse" name="consultarListaDecSimplPendGroupResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trasladoEfc">
+      <wsdl:input message="tns:trasladoEfc" name="trasladoEfc">
+    </wsdl:input>
+      <wsdl:output message="tns:trasladoEfcResponse" name="trasladoEfcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarGuiaMadre">
+      <wsdl:input message="tns:consultarGuiaMadre" name="consultarGuiaMadre">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarGuiaMadreResponse" name="consultarGuiaMadreResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="salidaZonaPrimaria">
+      <wsdl:input message="tns:salidaZonaPrimaria" name="salidaZonaPrimaria">
+    </wsdl:input>
+      <wsdl:output message="tns:salidaZonaPrimariaResponse" name="salidaZonaPrimariaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="salidaZonaPrimariaRemate">
+      <wsdl:input message="tns:salidaZonaPrimariaRemate" name="salidaZonaPrimariaRemate">
+    </wsdl:input>
+      <wsdl:output message="tns:salidaZonaPrimariaRemateResponse" name="salidaZonaPrimariaRemateResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDesconsolidadosIngAut">
+      <wsdl:input message="tns:consultarDesconsolidadosIngAut" name="consultarDesconsolidadosIngAut">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarDesconsolidadosIngAutResponse" name="consultarDesconsolidadosIngAutResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoRemiExportador">
+      <wsdl:input message="tns:ingresoRemiExportador" name="ingresoRemiExportador">
+    </wsdl:input>
+      <wsdl:output message="tns:ingresoRemiExportadorResponse" name="ingresoRemiExportadorResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaDecSimplLight">
+      <wsdl:input message="tns:consultarListaDecSimplLight" name="consultarListaDecSimplLight">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarListaDecSimplLightResponse" name="consultarListaDecSimplLightResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoNovedadesDeposito">
+      <wsdl:input message="tns:ingresoNovedadesDeposito" name="ingresoNovedadesDeposito">
+    </wsdl:input>
+      <wsdl:output message="tns:ingresoNovedadesDepositoResponse" name="ingresoNovedadesDepositoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaDeclaracionSimpl">
+      <wsdl:input message="tns:consultarListaDeclaracionSimpl" name="consultarListaDeclaracionSimpl">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarListaDeclaracionSimplResponse" name="consultarListaDeclaracionSimplResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verificarDespachoTere">
+      <wsdl:input message="tns:verificarDespachoTere" name="verificarDespachoTere">
+    </wsdl:input>
+      <wsdl:output message="tns:verificarDespachoTereResponse" name="verificarDespachoTereResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarSolicitudesIngAut">
+      <wsdl:input message="tns:consultarSolicitudesIngAut" name="consultarSolicitudesIngAut">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarSolicitudesIngAutResponse" name="consultarSolicitudesIngAutResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarAgente">
+      <wsdl:input message="tns:consultarAgente" name="consultarAgente">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarAgenteResponse" name="consultarAgenteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDeclaracionSimplificadaAll">
+      <wsdl:input message="tns:consultarDeclaracionSimplificadaAll" name="consultarDeclaracionSimplificadaAll">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarDeclaracionSimplificadaAllResponse" name="consultarDeclaracionSimplificadaAllResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarGuiasManifiestosPrevios">
+      <wsdl:input message="tns:consultarGuiasManifiestosPrevios" name="consultarGuiasManifiestosPrevios">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarGuiasManifiestosPreviosResponse" name="consultarGuiasManifiestosPreviosResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDesglose">
+      <wsdl:input message="tns:consultarDesglose" name="consultarDesglose">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarDesgloseResponse" name="consultarDesgloseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarManifiesto">
+      <wsdl:input message="tns:consultarManifiesto" name="consultarManifiesto">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarManifiestoResponse" name="consultarManifiestoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDeclaracionExpo">
+      <wsdl:input message="tns:consultarDeclaracionExpo" name="consultarDeclaracionExpo">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarDeclaracionExpoResponse" name="consultarDeclaracionExpoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listaSalidaZonaPrimaria">
+      <wsdl:input message="tns:listaSalidaZonaPrimaria" name="listaSalidaZonaPrimaria">
+    </wsdl:input>
+      <wsdl:output message="tns:listaSalidaZonaPrimariaResponse" name="listaSalidaZonaPrimariaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarBultosDeclarados">
+      <wsdl:input message="tns:consultarBultosDeclarados" name="consultarBultosDeclarados">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarBultosDeclaradosResponse" name="consultarBultosDeclaradosResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarManifiestosPrevios">
+      <wsdl:input message="tns:consultarManifiestosPrevios" name="consultarManifiestosPrevios">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarManifiestosPreviosResponse" name="consultarManifiestosPreviosResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDeclaracion">
+      <wsdl:input message="tns:consultarDeclaracion" name="consultarDeclaracion">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarDeclaracionResponse" name="consultarDeclaracionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaManifiestos">
+      <wsdl:input message="tns:consultarListaManifiestos" name="consultarListaManifiestos">
+    </wsdl:input>
+      <wsdl:output message="tns:consultarListaManifiestosResponse" name="consultarListaManifiestosResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="salidaDespachoSimplExpo">
+      <wsdl:input message="tns:salidaDespachoSimplExpo" name="salidaDespachoSimplExpo">
+    </wsdl:input>
+      <wsdl:output message="tns:salidaDespachoSimplExpoResponse" name="salidaDespachoSimplExpoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transito">
+      <wsdl:input message="tns:transito" name="transito">
+    </wsdl:input>
+      <wsdl:output message="tns:transitoResponse" name="transitoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoDepositoTema">
+      <wsdl:input message="tns:ingresoDepositoTema" name="ingresoDepositoTema">
+    </wsdl:input>
+      <wsdl:output message="tns:ingresoDepositoTemaResponse" name="ingresoDepositoTemaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoDepositoDocTrans">
+      <wsdl:input message="tns:ingresoDepositoDocTrans" name="ingresoDepositoDocTrans">
+    </wsdl:input>
+      <wsdl:output message="tns:ingresoDepositoDocTransResponse" name="ingresoDepositoDocTransResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="serviciodepositoSoapBinding" type="tns:serviciodepositoSoap">
+    <wsp:PolicyReference URI="#SecurityServiceSignThenEncryptPolicy"/>
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="verificarRetiroAnticipado">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="verificarRetiroAnticipado">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="verificarRetiroAnticipadoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarGuiasCou">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarGuiasCou">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarGuiasCouResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transitoCambioEstado">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="transitoCambioEstado">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="transitoCambioEstadoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDespacho">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarDespacho">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarDespachoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoRemiEfcConsultar">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="ingresoRemiEfcConsultar">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ingresoRemiEfcConsultarResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDeclaracionSimplificadaExpo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarDeclaracionSimplificadaExpo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarDeclaracionSimplificadaExpoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDeclaracionSimplificada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarDeclaracionSimplificada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarDeclaracionSimplificadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarSaldoRuc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarSaldoRuc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarSaldoRucResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarTransitosSqf">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarTransitosSqf">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarTransitosSqfResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaDeclaracionSimplGuia">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarListaDeclaracionSimplGuia">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarListaDeclaracionSimplGuiaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoDespachoSimplExpo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="ingresoDespachoSimplExpo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ingresoDespachoSimplExpoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarManifiestoTitulo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarManifiestoTitulo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarManifiestoTituloResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trasladosEfc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="trasladosEfc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="trasladosEfcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDesglosesIngAut">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarDesglosesIngAut">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarDesglosesIngAutResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaDeclaracion">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarListaDeclaracion">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarListaDeclaracionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaIntervencionesLineas">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultaIntervencionesLineas">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultaIntervencionesLineasResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDeclaracionSinSalida">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarDeclaracionSinSalida">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarDeclaracionSinSalidaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actaRecepcion">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="actaRecepcion">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="actaRecepcionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoDeposito">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="ingresoDeposito">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ingresoDepositoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoEfc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="ingresoEfc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ingresoEfcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="expedienteTh">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="expedienteTh">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="expedienteThResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDeclaracionSimplLiquidacion">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarDeclaracionSimplLiquidacion">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarDeclaracionSimplLiquidacionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarManifiestosDeposito">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarManifiestosDeposito">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarManifiestosDepositoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaDeclaracionLight">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarListaDeclaracionLight">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarListaDeclaracionLightResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guiasSinOficializar">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guiasSinOficializar">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guiasSinOficializarResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="crearBoletaCanon">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="crearBoletaCanon">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="crearBoletaCanonResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarTransporteInternacional">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarTransporteInternacional">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarTransporteInternacionalResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaIntervenciones">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultaIntervenciones">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultaIntervencionesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaIntervencionesContenedores">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultaIntervencionesContenedores">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultaIntervencionesContenedoresResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoRemiEfcRegistrar">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="ingresoRemiEfcRegistrar">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ingresoRemiEfcRegistrarResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaManifiesto">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarListaManifiesto">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarListaManifiestoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarImportador">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarImportador">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarImportadorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="revertirDeposito">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="revertirDeposito">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="revertirDepositoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarManifiestoTema">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarManifiestoTema">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarManifiestoTemaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="afectacionesCanon">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="afectacionesCanon">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="afectacionesCanonResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarCotizacion">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarCotizacion">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarCotizacionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarCodigoBarra">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarCodigoBarra">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarCodigoBarraResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaDecSimplPendGroup">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarListaDecSimplPendGroup">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarListaDecSimplPendGroupResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trasladoEfc">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="trasladoEfc">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="trasladoEfcResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarGuiaMadre">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarGuiaMadre">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarGuiaMadreResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="salidaZonaPrimaria">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="salidaZonaPrimaria">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="salidaZonaPrimariaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="salidaZonaPrimariaRemate">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="salidaZonaPrimariaRemate">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="salidaZonaPrimariaRemateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDesconsolidadosIngAut">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarDesconsolidadosIngAut">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarDesconsolidadosIngAutResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoRemiExportador">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="ingresoRemiExportador">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ingresoRemiExportadorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaDecSimplLight">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarListaDecSimplLight">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarListaDecSimplLightResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoNovedadesDeposito">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="ingresoNovedadesDeposito">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ingresoNovedadesDepositoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaDeclaracionSimpl">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarListaDeclaracionSimpl">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarListaDeclaracionSimplResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verificarDespachoTere">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="verificarDespachoTere">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="verificarDespachoTereResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarSolicitudesIngAut">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarSolicitudesIngAut">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarSolicitudesIngAutResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarAgente">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarAgente">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarAgenteResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDeclaracionSimplificadaAll">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarDeclaracionSimplificadaAll">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarDeclaracionSimplificadaAllResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarGuiasManifiestosPrevios">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarGuiasManifiestosPrevios">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarGuiasManifiestosPreviosResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDesglose">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarDesglose">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarDesgloseResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarManifiesto">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarManifiesto">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarManifiestoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDeclaracionExpo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarDeclaracionExpo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarDeclaracionExpoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listaSalidaZonaPrimaria">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="listaSalidaZonaPrimaria">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listaSalidaZonaPrimariaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarBultosDeclarados">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarBultosDeclarados">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarBultosDeclaradosResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarManifiestosPrevios">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarManifiestosPrevios">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarManifiestosPreviosResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarDeclaracion">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarDeclaracion">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarDeclaracionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarListaManifiestos">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="consultarListaManifiestos">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarListaManifiestosResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="salidaDespachoSimplExpo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="salidaDespachoSimplExpo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="salidaDespachoSimplExpoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transito">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="transito">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="transitoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoDepositoTema">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="ingresoDepositoTema">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ingresoDepositoTemaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresoDepositoDocTrans">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="ingresoDepositoDocTrans">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ingresoDepositoDocTransResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="serviciodeposito">
+    <wsdl:port binding="tns:serviciodepositoSoapBinding" name="serviciodepositoSoap">
+      <soap:address location="https://securetest.aduana.gov.py/sgd2/serviciodeposito"/>
+    </wsdl:port>
+  </wsdl:service>
+    <wsp:Policy xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy" wsu:Id="SecurityServiceSignThenEncryptPolicy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:AsymmetricBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:InitiatorToken>
+              <wsp:Policy>
+                <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+                  <wsp:Policy>
+                    <sp:WssX509V1Token11/>
+                  </wsp:Policy>
+                  </sp:X509Token>
+              </wsp:Policy>
+            </sp:InitiatorToken>
+            <sp:RecipientToken>
+              <wsp:Policy>
+                <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/Never">
+                  <wsp:Policy>
+                    <sp:WssX509V1Token11/>
+                  </wsp:Policy>
+                </sp:X509Token>
+              </wsp:Policy>
+            </sp:RecipientToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:TripleDesRsa15/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Lax/>
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp/>
+            <sp:EncryptSignature/>
+            <sp:OnlySignEntireHeadersAndBody/>
+            <sp:SignBeforeEncrypting/>
+          </wsp:Policy>
+        </sp:AsymmetricBinding>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+        </sp:EncryptedParts>
+        <sp:Wss10 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:MustSupportRefIssuerSerial/>
+          </wsp:Policy>
+        </sp:Wss10>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+</wsdl:definitions>
